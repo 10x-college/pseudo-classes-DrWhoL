@@ -1,0 +1,190 @@
+/* ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaeaea;
+    min-height: 100vh;
+    text-align: center;
+}
+/* -- */
+.app-wrapper {
+    width: 1512px;
+    height: 982px;
+    background-color: #f4f6f8;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* - */
+.header {
+    height: 88px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e3e3e3;
+    padding: 0 32px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.search-input {
+    width: 460px;
+    height: 44px;
+    margin-top: 22px;
+    border-radius: 12px;
+    border: 1px solid #ECF3F5;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4f7c3a;
+}
+
+.header-actions {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.date-time {
+    font-size: 13px;
+    color: #555;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.add-table-btn {
+    background-color: #B1CED4;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-table-btn:hover {
+    background-color: #8fb2b5;
+}
+
+
+/* -1- */
+.main {
+    padding: 32px;
+    overflow-y: auto;
+    width: 1500px;
+}
+
+/* -2- */
+.product-grid {
+    text-align: left;
+}
+
+/* productis cardi */
+.product-card {
+    display: inline-block;
+    width: 320px;
+    margin: 0 24px 28px 0;
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    vertical-align: top;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+/* card-content */
+.product-title {
+    padding: 14px 16px 6px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.product-category {
+    padding: 0 16px 16px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* badge */
+.badge {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 6px;
+    background-color: #d9a15b;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* footer */
+.footer {
+    height: 96px;
+    background-color: #ffffff;
+    border-top: 2px solid #e3e3e3;
+    text-align: center;
+    line-height: 96px;
+}
+/* nav */
+.category-nav {
+    display: inline-block;
+}
+
+.category-btn {
+    min-width: 160px;
+    height: 48px;
+    margin: 0 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e6e6e6;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.category-btn:hover {
+    background-color: #d2d2d2;
+}
+
+.category-btn.active {
+    background-color: #4A5C2F;
+    color: #ffffff;
+}
+/* pseudo */
+.product-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #4f7c3a;
+    margin-top: 6px;
+}
+
