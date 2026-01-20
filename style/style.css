@@ -171,13 +171,11 @@ body {
 }
 
 .category-btn:hover {
-    background-color: #d2d2d2;
+    background-color: #4A5C2F;
+    color: white;
 }
 
-.category-btn.active {
-    background-color: #4A5C2F;
-    color: #ffffff;
-}
+
 /* pseudo */
 .product-title::after {
     content: "";
