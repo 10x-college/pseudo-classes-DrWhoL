@@ -175,7 +175,10 @@ body {
     color: white;
 }
 
-
+.category-btn.active {
+    background-color: #4A5C2F;
+    color: #ffffff;
+}
 /* pseudo */
 .product-title::after {
     content: "";
